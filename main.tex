@@ -1,0 +1,199 @@
+%-------------------------
+% Resume in Latex
+% Author : David Franco
+% Based off of: https://GitHub.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Random Stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\footskip}{4.08003pt}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingContinue}[2]{
+  \vspace{-3pt}
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{center}
+        % NAME
+        {\Huge\scshape David Franco} 
+        % SUBHEADING
+        \\ (856)-278-0205\\
+        \small
+        % EMAIL
+        \href{mailto:EMAIL}{\raisebox{-0.2\height}\faEnvelope\  \underline{david7franco@outlook.com}} ~ 
+        % LINKEDIN
+        \href{https://www.linkedin.com/feed/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/david-franco-36735223b/}}  ~
+        % GitHub
+        \href{https://GitHub.com/david7franco}{\raisebox{-0.2\height}{\faGithub}\ \underline{GitHub.com/david7franco}} ~
+    \end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills}
+
+    \vspace{-7pt}
+    \begin{itemize}
+    [leftmargin=0.15in, label={}]\small{\item{
+        % LANGUAGES
+        \textbf{Programming Languages}{: Java, Python, SQL, C/C++, JavaScript, Lua} \\
+        % TOOLS
+        \textbf{Developer Tools}{: Git, GitHub, Bash Script, MySQL, Jira } \\
+        % TECHNOLOGIES
+        \textbf{Technologies/Frameworks}{: HTML/CSS, Django, AngularJS, HammerSpoonm, AppMan Job Scheduler,} \\}}
+    \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+    \resumeSubHeadingListStart
+    
+        % COMPANY 1
+        \resumeSubheading
+        {Applications and Integrations Developer - Student Worker}{July-2023 - Present}
+           % POSITION 1
+            {Rowan University IRT - Software Development and System Services} {Glassboro, NJ}
+            \resumeItemListStart
+                \resumeItem{Successfully refactored and optimized multiple data feeds using the Python library ProfPy, reducing technical debt while facilitating future feed upgrades}
+                \resumeItem{Created SQL Queries using Banner tables to make sure the AppMan Job Scheduler modules were running correctly and data was populated into the tables}
+                \resumeItem{Communicated with different departments to solve complex problems}
+                \resumeItem{Managed and tracked tickets and issues using Jira, while consistently meeting project deadlines}
+            \resumeItemListEnd
+        % Company 2
+            % POSITION 1
+        \resumeSubheading
+        {IT Specialist}{April 2022 - July 2023}
+        {Rowan University IRT - Technology Services}{Glassboro, NJ}
+            \resumeItemListStart
+                \resumeItem{Successfully closed and resolved over 250 hardware and software incidents initiated by Rowan University's faculty and students since April 2022}
+                \resumeItem{Collaborated with different teams to escalate ServiceNow Tickets to the appropriate teams}
+                \resumeItem{Proficiently managed incident resolution and maintained the hardware database utilizing ServiceNow}
+                \resumeItem{Tasked with training new student employees, showcasing trust in handling crucial responsibilities}
+                \resumeItem{Conducted excellent written and verbal communication skills}
+            \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section {Projects} 
+    \resumeSubHeadingListStart
+
+        % Project 1
+        \resumeProjectHeading
+        {ReziBo ticket Management | \textit{HTML/CSS, Django, SQLite3, JavaScript} \href{https://GitHub.com/david7franco/ReziBo}{\raisebox{-0.2\height}| \underline{GitHub Link}}}
+        % Date
+        {Dec. 2023}
+        \resumeItemListStart
+            \resumeItem{As Scrum Master, orchestrated project phases from planning to deployment using the Agile framework, facilitating task assignments to team members, and ensuring adherence to deadlines for sprints, resulting in the successful completion of the project within the stipulated timeline }
+            \resumeItem{Designed an offline database schema to store tickets, users, relationships between tickets and users, along with annotations to a ticket, extended Django's user class to create different types of users who serve different purposes }
+            \resumeItem{Using Django's forms feature, developed multiple forms for users to sign up, create a ticket, edit ticket information, or edit user information} 
+            \resumeItem{Leveraged Django's robust features to architect a user-friendly ticket management platform, implementing functionalities including ticket management, ticket creation, priority setting, due date tracking, and user authentication}
+        \resumeItemListEnd
+    
+        % Project 2
+        \resumeProjectHeading
+        {Iglesia Soli Deo Gloria | \textit{HTML/CSS, Django, SQLite3} | \href{https://GitHub.com/david7franco/IglesiaBautistaSoliDeoGloria}{\raisebox{-0.2\height} \ \underline{GitHub Link}}}
+        % Date
+        {Present}
+        \resumeItemListStart
+            \resumeItem{Developed a website for a small church based in Mount Laurel using the Python Django framework, with HTML/CSS and Bootstrap-V5 elements included}
+            \resumeItem{Designed an offline database schema to manage user donations, track individual church contributions, handle contact information, and implement a comment section for Pastor responses to congregation inquiries}
+            \resumeItem{Created functionality requested by stakeholder, which includes developing a donations page, sermons up-loader page, and more, utilizing multiple Django modules}
+        \resumeItemListEnd
+         % Project 3
+        \resumeProjectHeading
+        {WorkForcePro | \textit{HTML/CSS, Angular, MySQL} | \href{https://GitHub.com/awvolin/SWE}{\raisebox{-0.2\height}\ \underline{GitHub Link}}}
+        % Date
+        {Mar. 2023}
+        \resumeItemListStart
+            \resumeItem {Collaborated with a team of 7 students to aid as Product Owner/Developer in the
+development and implementation of WorkForcePro to enhance employee management processes and improve overall
+organizational efficiency}
+            \resumeItem {Developed user roles and permissions utilizing Angular Framework libraries, allowing
+managers and admins to securely access and manage the software's various features and
+functions}
+            \resumeItem {Designed offline local host MySQL database into the software, providing secure data storage
+and retrieval functionality. Created a Schema to parse and store information for different
+tables, such as users, roles, and designation}
+        \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    % MAIN INFORMATION
+    \resumeSubheading
+    {Rowan University}{Glassboro, NJ}
+    {Bachelors of Sciences in Computer Science}{Anticipated May 2024}
+        % BULLET POINTS
+        
+  \resumeSubHeadingListEnd
+  
+\end{document}
